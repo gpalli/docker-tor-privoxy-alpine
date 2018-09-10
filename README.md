@@ -3,9 +3,12 @@
 The smallest (**15 MB**) docker image with Tor and Privoxy on Alpine Linux.
 
 ```
-docker run -d -p 8118:8118 -p 9050:9050 rdsubhas/tor-privoxy-alpine
+docker run -d -p 8118:8118 -p 9050:9050 -p 9051:9051 gpalli/docker-tor-privoxy-alpine
 curl --proxy localhost:8118 https://www.google.com
 ```
+
+[gpalli]
+Added ControlPort 9051 with HashedPassword for using with Nyx
 
 And that's it! Read the accompanying [blog post](https://medium.com/@rdsubhas/docker-image-with-tor-privoxy-and-a-process-manager-under-15-mb-c9e344111b61) for more details.
 
