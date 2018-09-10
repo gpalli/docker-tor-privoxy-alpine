@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:latest
 
 EXPOSE 8118 9050 9051
 
